@@ -1,0 +1,25 @@
+Project: Personalized Drug Candidate Prioritization System
+
+Cancer type:
+Glioblastoma (GBM)
+
+Primary data source:
+TCGA-GBM
+
+Planned molecular data:
+1. Somatic mutation data
+2. RNA-seq gene expression data
+
+Planned pipeline:
+Patient data
+-> preprocessing
+-> patient-specific altered gene identification
+-> target prioritization
+-> drug-target integration
+-> molecular features
+-> machine-learning scoring
+-> personalized candidate ranking
+
+Scope:
+Research prototype only.
+Not intended for clinical treatment recommendation.
