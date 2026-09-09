@@ -1,0 +1,30 @@
+project:
+  name: Personalized GBM Drug Candidate Prioritization
+  cancer_type: Glioblastoma
+  cancer_abbreviation: GBM
+  project_scope: research_only
+
+dataset:
+  cohort: TCGA-GBM
+  source: cBioPortal
+
+molecular_data:
+  somatic_mutations: true
+  gene_expression: true
+
+analysis:
+  patient_level: true
+  altered_gene_identification: true
+  drug_candidate_ranking: true
+
+machine_learning:
+  baseline_model: Logistic Regression
+  candidate_models:
+    - Random Forest
+    - XGBoost
+
+output:
+  personalized_top_n_drugs: true
+
+clinical_use:
+  intended_for_clinical_decisions: false
